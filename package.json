@@ -1,0 +1,47 @@
+{
+	"name": "@guillotinaweb/volto-guillotina",
+	"version": "1.0.0",
+	"description": "Volto Guillotina Addon",
+	"main": "index.js",
+	"scripts": {
+		"lint": "./node_modules/.bin/eslint 'src/**/*.{js,jsx}'",
+		"lint:fix": "./node_modules/.bin/eslint --fix 'src/**/*.{js,jsx}'",
+		"lint:ci": "./node_modules/.bin/eslint -f checkstyle 'src/**/*.{js,jsx}' > eslint.xml",
+		"prettier": "./node_modules/.bin/prettier --single-quote src/**/*.{js,jsx,ts,tsx,json,md} --check",
+		"prettier:fix": "./node_modules/.bin/prettier --single-quote --write src/**/*.{js,jsx,ts,tsx,json,md}"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/guillotinaweb/volto-guillotina.git"
+	},
+	"keywords": [
+		"Volto",
+		"Block",
+		"ReactJS",
+		"Guillotina"
+	],
+	"author": "bloodbare, sneridagh",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/guillotinaweb/volto-guillotina/issues"
+	},
+	"homepage": "https://github.com/guillotinaweb/volto-guillotina#readme",
+	"prettier": {
+		"trailingComma": "all",
+		"singleQuote": true,
+		"overrides": [
+			{
+				"files": "*.overrides",
+				"options": {
+					"parser": "less"
+				}
+			}
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "5.16.0",
+		"eslint-plugin-prettier": "3.1.3",
+		"prettier": "2.0.5"
+	}
+}
